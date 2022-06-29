@@ -188,6 +188,7 @@ body {
 }
 
 .hero-secure {
+    display: inline-block;
     font-weight: 400;
     font-size: 11px;
     text-transform: uppercase;
@@ -249,6 +250,10 @@ body {
 }
 
 /* articles */
+.articles {
+    border-bottom: 1px solid #E4E4E4;
+}
+
 .articles-list {
     flex-wrap: wrap;
 }
@@ -256,11 +261,16 @@ body {
 .articles-item {
     width: 570px;
     margin-bottom: 30px;
-    outline: 1px solid coral;
 }
 
 .articles-item:not(:nth-child(2n)) {
     margin-right: 30px;
+}
+
+.blog-preview {
+    overflow: hidden;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
 }
 
 .blog-preview-image {
@@ -274,24 +284,42 @@ body {
 .blog-preview-time {
     display: block;
     margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: #787878;
 }
 
 .blog-preview-title {
     margin: 0;
     margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: #1C1C1C;
 }
 
 .blog-preview-descr {
     margin: 0;
+    max-width: 270px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787878;
 }
 
 /* clients */
+.clients {
+    border-bottom: 1px solid #DADADA;
+}
+
 .clients-item {
     flex-direction: column;
     width: 370px;
     padding: 50px 36px;
     padding: 30px;
-    outline: 1px solid coral;
+    border: 1px solid #6B6B6B;
+    border-radius: 5px;
 }
 
 .clients-item:not(:nth-child(3n)) {
@@ -301,11 +329,19 @@ body {
 .clients-item-descr {
     margin: 0;
     margin-bottom: 30px;
+    max-width: 281px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
 }
 
 .clients-user {
     margin-top: auto;
     align-items: center;
+    border-top: 1px solid #DADADA;
+    width: 100%;
+    padding-top: 28px;
 }
 
 .clients-avatar {
@@ -314,8 +350,26 @@ body {
     margin-right: 17px;
 }
 
+.clients-avatar img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #3172B9;
+    border-radius: 100%;
+}
+
 .clients-name {
     margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 180%;
+    color: #1C1C1C;
+}
+
+.clients-post {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
 }
 
 /* contacts */
