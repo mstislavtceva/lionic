@@ -188,7 +188,7 @@ body {
 }
 
 .hero-secure {
-    display: inline-block;
+    display: block;
     font-weight: 400;
     font-size: 11px;
     text-transform: uppercase;
@@ -373,6 +373,10 @@ body {
 }
 
 /* contacts */
+.contacts {
+    border-bottom: 1px solid #DADADA;
+}
+
 .contacts-address {
     font-style: normal;
 }
@@ -380,28 +384,66 @@ body {
 .contacts-item {
     flex-direction: column;
     width: 370px;
-    outline: 1px solid coral;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 29px 29px;
+    padding-top: 48px;
 }
 
 .contacts-item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
 
+.contacts-item-location {
+    background-image: url("../img/location_on.svg");
+}
+
+.contacts-item-call {
+    background-image: url("../img/phone.svg");
+}
+
+.contacts-item-mail {
+    background-image: url("../img/mail.svg");
+}
+
 .contacts-item-caption {
     margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 180%;
+    color: #1C1C1C;
 }
 
 .contacts-item-text {
     margin: 0;
+    max-width: 215px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
 }
 
-.contacts-item-link:not(:last-child) {
-    margin-bottom: 5px;
+.contacts-item-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
 }
 
 /* footer */
 .footer {
     padding: 42px 0;
+}
+
+.footer-nav {
+    margin-right: 56px;
+}
+
+.footer-copy {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #787878;
 }
 
 .footer-container {
@@ -418,6 +460,38 @@ body {
     margin-right: 25px;
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
     margin-right: 28px;
+}
+
+.footer-link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #787878;
+}
+
+.social-link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 32px;
+}
+
+.social-link-tw {
+    background-image: url("../img/twitter-footer.svg");
+}
+
+.social-link-linkedin {
+    background-image: url("../img/linkedin-footer.svg");
+}
+
+.social-link-mail {
+    background-image: url("../img/mail-footer.svg");
 }
