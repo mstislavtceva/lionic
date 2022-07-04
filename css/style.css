@@ -188,7 +188,9 @@ body {
 }
 
 .hero-secure {
-    display: block;
+    padding-left: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     font-weight: 400;
     font-size: 11px;
     text-transform: uppercase;
@@ -197,7 +199,6 @@ body {
     background-position: left center;
     background-size: 14px 17px;
     background-repeat: no-repeat;
-    padding-left: 30px;
 }
 
 
