@@ -460,6 +460,11 @@ body {
     transition: color 0.3s ease-in-out;
 }
 
+.articles-center {
+    display: none;
+    text-align: center;
+}
+
 /* clients */
 .clients {
     border-bottom: 1px solid #DADADA;
